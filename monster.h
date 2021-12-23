@@ -17,7 +17,6 @@ public:
 		monster_data[type].damage)
 	{}
 	static Monster getRandomMonster() {
-		//srand(time(0));
 		int tmp = rand() % 3;
 		return Monster(static_cast<Type>(tmp));
 	}
